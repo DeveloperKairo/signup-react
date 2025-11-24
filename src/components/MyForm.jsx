@@ -25,10 +25,10 @@ const MyForm = () => {
 
     if (isNameValid && isEmailValid && isPasswordValid && isConfirmValid) {
       alert('Cadastro efetuado!');
-      setName('');
-      setEmail('');
-      setPassword('');
-      setConfirmPass('');
+      // setName('');
+      // setEmail('');
+      // setPassword('');
+      // setConfirmPass('');
     }
 
   }
@@ -81,26 +81,34 @@ const MyForm = () => {
           <h1>Crie sua conta</h1>
           <div className='input-group'>
             <label htmlFor='name' className='input-label'>Nome Completo</label>
-            <input type="text" placeholder="Digite seu nome completo" id="name" onChange={(e) => setName(e.target.value)} />
+            <input type="text" placeholder="Digite seu nome completo" 
+            id="name" onChange={(e) => setName(e.target.value)}
+            onBlur={checkName} />
             {nameError && <span className='input-error'>{nameError}</span>}
           </div>
 
           <div className='input-group'>
             <label htmlFor='email' className='input-label'>E-mail</label>
-            <input type="email" placeholder="seuemail@exemplo.com" id="email" onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" placeholder="seuemail@exemplo.com" 
+            id="email" onChange={(e) => setEmail(e.target.value)}
+            onBlur={checkEmail} />
             {emailError && <span className='input-error'>{emailError}</span>}
           </div>
 
           <div className='input-group'>
             <label className='input-label' htmlFor='pass'>Senha</label>
-            <input type="password" placeholder="Crie uma senha forte" id="pass" onChange={(e) => setPassword(e.target.value)} />
+            <input type="password" placeholder="Crie uma senha forte" 
+            id="pass" onChange={(e) => setPassword(e.target.value)}
+            onBlur={checkPass} />
             {passError && <span className='input-error'>{passError}</span>}
           </div>
 
           <div className='input-group'>
             <label htmlFor='confirm-pass' className='input-label'>Confirmar Senha</label>
-            <input type="password" placeholder="Confirme sua senha" name="confirm-pass" onChange={(e) => setConfirmPass(e.target.value)} />
-            {confirmPassError && <span>{confirmPassError}</span>}
+            <input type="password" placeholder="Confirme sua senha" 
+            id="confirm-pass" onChange={(e) => setConfirmPass(e.target.value)}
+            onBlur={checkConfirmPass} />
+            {confirmPassError && <span className='input-error'>{confirmPassError}</span>}
           </div>
 
           <button type="submit">Cadastrar</button>
