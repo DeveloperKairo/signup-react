@@ -1,16 +1,45 @@
-# React + Vite
+# Signup React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto simples de formulário de cadastro desenvolvido com Vite, ReactJS e CSS. Criado com o objetivo de praticar conceitos fundamentais do React e do ecossistema moderno de desenvolvimento front-end.
 
-Currently, two official plugins are available:
+## Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Vite — Build tool moderna e rápida para front-end
+- ReactJS — Biblioteca JavaScript para criação de interfaces de usuário
+- CSS — Estilização visual
 
-## React Compiler
+## Como executar localmente
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone o repositório:
 
-## Expanding the ESLint configuration
+```git clone https://github.com/DeveloperKairo/signup-react.git```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Acesse o diretório do projeto:
+
+```cd signup-react```
+
+3. Instale as dependências:
+
+```npm install```
+
+4. Execute o projeto em modo de desenvolvimento:
+
+```npm run dev```
+
+5. Abra o navegador em: `http://localhost:5173` (ou no endereço informado pelo terminal)
+
+## Sobre
+
+O projeto consiste em um formulário de cadastro básico que serve de exemplo para quem deseja entender a integração do React com Vite, manipulação de estados e eventos de formulários.
+
+## Estrutura do Projeto
+
+- `src/`: Código-fonte do projeto
+- `public/`: Arquivos públicos e estáticos
+- `package.json`: Dependências e scripts do projeto
+- `vite.config.js`: Configuração do Vite
+
+## Contribuição
+
+Contribuições são bem-vindas! Fique à vontade para abrir issues e pull requests.
+
